@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:project_1/after_splash.dart';
 import 'package:project_1/sign_up.dart';
 import 'package:project_1/log_in.dart';
+import 'Splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
       //   useMaterial3: true,
       // ),
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: Splash(),
     );
   }
 }
