@@ -1,30 +1,40 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:project_1/after_splash.dart';
-import 'package:project_1/sign_up.dart';
-import 'package:project_1/log_in.dart';
-import 'Splash.dart';
+import 'package:provider/provider.dart';
+import 'data/expense_data.dart';
+import 'login_page.dart';
+import 'pages/settings_page.dart';
+import 'pages/overview_page.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Budget Tracker',
-      // theme: ThemeData(
-      //
-      //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      //   useMaterial3: true,
-      // ),
-      debugShowCheckedModeBanner: false,
-      home: Splash(),
+    return ChangeNotifierProvider(
+      create: (context) => ExpenseData(),
+      child: ValueListenableBuilder<ThemeMode>(
+        valueListenable: SettingsPage.themeNotifier,
+        builder: (context, themeMode, child) {
+          return MaterialApp(
+            title: 'Expense Tracker',
+            theme: ThemeData.light(), // Light theme
+            darkTheme: ThemeData.dark(), // Dark theme
+            themeMode: themeMode, // Use the theme mode from SettingsPage
+            initialRoute: '/',
+            routes: {
+              '/': (context) => LoginPage(),
+              '/overview': (context) => OverviewPage(), // Add overview route
+              '/settings': (context) => SettingsPage(), // Add settings route
+            },
+          );
+        },
+      ),
     );
   }
 }
-
 

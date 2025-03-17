@@ -1,14 +1,14 @@
 {
   "project_info": {
-    "project_number": "904818723123",
-    "firebase_url": "https://daily-expense-tracker-43d58-default-rtdb.firebaseio.com",
-    "project_id": "daily-expense-tracker-43d58",
-    "storage_bucket": "daily-expense-tracker-43d58.firebasestorage.app"
+    "project_number": "843549430890",
+    "firebase_url": "https://stapp-ebacb-default-rtdb.firebaseio.com",
+    "project_id": "stapp-ebacb",
+    "storage_bucket": "stapp-ebacb.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:904818723123:android:010dd5172d7c590bba9646",
+        "mobilesdk_app_id": "1:843549430890:android:c0772c3d00619ef6d4e613",
         "android_client_info": {
           "package_name": "com.example.project_1"
         }
@@ -16,7 +16,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCALXCA7Ghs_oWlgnTBoxDcJcgqBimFr-A"
+          "current_key": "AIzaSyALW3TbC7RMPZTBIv_KPyyBtZjMnWSRfRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843549430890:android:d8480808eaa88637d4e613",
+        "android_client_info": {
+          "package_name": "com.example.testproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALW3TbC7RMPZTBIv_KPyyBtZjMnWSRfRE"
         }
       ],
       "services": {
