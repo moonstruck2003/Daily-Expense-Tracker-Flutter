@@ -32,8 +32,7 @@ Finflow is a **smart and intuitive expense tracker** designed to help users mana
 
 ## 🎥 Demo Video  
 
-📌 _[Add a link to the app demo video]_  
-
+📌(https://www.linkedin.com/posts/md-jaliz-mahmud-mridul-13398a280_finflow-expensetracker-flutter-activity-7307764962175676416-OJjs?utm_source=share&utm_medium=member_desktop&rcm=ACoAAER8-DcBHCkXjSgq3yrEHNCxwatnFeQU5zk)
 ---
 
 ## 📂 Installation & Setup  
